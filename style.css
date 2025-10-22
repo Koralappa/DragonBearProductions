@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === POLICES === */
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0px;
+  text-transform: uppercase; /* Optionnel : donne un look cinéma */
+}
+
+/* Paragraphes et texte normal */
+body, p, li, a, span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+/* Bonus : style du titre principal */
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 3px; /* Espacement façon affiche de film */
+}
+
+
+/* SECTION HERO */
+.hero {
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Contenu centré */
+.hero-content {
+  position: relative;
+  top: -150px;/* ajuste selon le besoin */
+  z-index: 1;
+  display: flex;
+  flex-direction: column; /* pour empiler image + texte */
+  align-items: center;     /* centrer horizontalement */
+  justify-content: center; /* centrer verticalement */
+  height: 100vh;           /* occupe tout l'écran */
+  text-align: center;
+  color: white;
+}
+
+.hero-img {
+  width: 300px; /* ajuste selon ton image */
+  height: auto;
+  margin-bottom: 80px;* espace entre image et texte */
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
+
+.btn {
+  background: #ff0080;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff66a3;
+}
+
+/* AUTRES SECTIONS */
+section {
+  padding: 80px 10%;
+  background: #fff;
+  color: #333;
+}
